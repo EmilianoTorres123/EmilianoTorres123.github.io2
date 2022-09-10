@@ -1,0 +1,21 @@
+<h3>logros y certificados</h3>
+<table border="0">
+    <ul *ngFor="let certi of certificados">
+        <li>
+            <tr>
+                <td>{{certi.certificacion}}</td> 
+            </tr>
+            <tr>
+                <td>Logros</td>
+            </tr>
+            <ul *ngFor = "let logro of certi.logros">
+                <li>
+                    <tr>
+                        <td>{{logro.descripcion}}</td>
+                    </tr>
+                </li> 
+            </ul>
+        </li>
+    </ul>
+
+</table>
